@@ -4,18 +4,10 @@ public abstract class Device {
     private final int id;
     private boolean isVisited = false;
     protected String type;
-    protected List<Device> connectedDevices = new LinkedList<Device>();
+    protected List<Device> connectedDevices = new LinkedList<>();
 
     public Device(int id) {
         this.id = id;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public List<Device> getConnectedDevices() {
-        return connectedDevices;
     }
 
     public void connect(Device d) {
